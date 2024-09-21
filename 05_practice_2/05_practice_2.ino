@@ -10,7 +10,7 @@ void loop() {
   delay(1000);
   while (count <=  10) {
     digitalWrite(7, toggle);
-    delay(100); //delay를 100 이상으로 주면 5번이 보이는데 100이면 4번처럼 보임..
+    delay(100);
     count = ++count;
     toggle = (toggle+1)%2;
   }
