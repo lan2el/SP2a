@@ -40,7 +40,7 @@ void loop() {
   if (distance >= 300) {
     analogWrite(9, 255);
   } else if (distance >= 200) {
-    analogWrite(9, int(255-((distance-200)*2.55)));
+    analogWrite(9, int((distance-200)*2.55));
   } else if (distance >= 100) {
     analogWrite(9, int(255-((distance-100)*2.55)));
   } else if (distance < 100) {
